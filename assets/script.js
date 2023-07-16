@@ -1,6 +1,11 @@
 // Assignment Code
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lower = "abcdefghijklmnopqrstuvwxyz";
+var symbol = "~!@#$%^&*()_?><"
+var number = "1234567890"
 var generateBtn = document.querySelector("#generate");
-var password =
+ 
+
 
 // Write password to the #password input
 function writePassword() {
@@ -11,10 +16,53 @@ function writePassword() {
 
 }
 
+var generatePassword = function() {
+  var select = 0;
+
+  var select = prompt("make password 8 - 128");
+
+  if(select < 8 || select > 128 || isNaN(select)|| null){
+    alert("you failed");
+    return("you failed");
+  }
 
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword ) 
+  var getPassword = ""; 
+
+  var locateupper = confirm ("do you want caps");
+  if (locateupper) {
+    getPassword = upper.concat(getPassword);
+  }
+
+  var locatelower = confirm ("do you want caps");
+  if (locatelower) {
+    getPassword = lower.concat(getPassword);
+  }
+
+  var locatesymbol = confirm ("do you want caps");
+  if (locatesymbol) {
+    getPassword = symbol.concat(getPassword);
+  }
+
+  var locatenumber = confirm ("do you want caps");
+  if (locatenumber) {
+    getPassword = number.concat(getPassword);
+  }
+  
+  let arr = Array.from(getPassword);
+  console.log(arr);
+  let result = "";
+
+  for (let i = 0; i< select; i++) {
+    result += arr[Math.floor(Math.random() * arr.length)];
+  }
+  return result;
+}
+
+
+
+
+
 
 
   
@@ -44,11 +92,6 @@ function getnumber() {
 function getsymbol() {
     return String.fromCharCode(Math.floor(Math.random() * 15) + 33);
 }
-console.log(getlowercase());
 
-console.log(getuppercase());
-
-console.log(getnumber());
-
-console.log(getsymbol());
-
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
