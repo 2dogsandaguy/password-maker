@@ -19,32 +19,32 @@ function writePassword() {
 var generatePassword = function() {
   var select = 0;
 
-  var select = prompt("make password 8 - 128");
+  var select = prompt("Choose between 8-128 charters for you're password");
 
   if(select < 8 || select > 128 || isNaN(select)|| null){
-    alert("you failed");
-    return("you failed");
+    alert("Please select a number between 8-128");
+    return("You failed to enter a number between 8-128 try aagain ");
   }
 
 
   var getPassword = ""; 
 
-  var locateupper = confirm ("do you want caps");
+  var locateupper = confirm ("Would you like capital letters in the password");
   if (locateupper) {
     getPassword = upper.concat(getPassword);
   }
 
-  var locatelower = confirm ("do you want caps");
+  var locatelower = confirm ("Would you like lowercase letters in the password");
   if (locatelower) {
     getPassword = lower.concat(getPassword);
   }
 
-  var locatesymbol = confirm ("do you want caps");
+  var locatesymbol = confirm ("Would you like symbol's in the password");
   if (locatesymbol) {
     getPassword = symbol.concat(getPassword);
   }
 
-  var locatenumber = confirm ("do you want caps");
+  var locatenumber = confirm ("Would you like numbers in the password");
   if (locatenumber) {
     getPassword = number.concat(getPassword);
   }
