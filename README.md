@@ -34,4 +34,14 @@ This is good to create a password for all you're. Millions of accounts that we h
 https://www.youtube.com/watch?v=duNmhKgtcsI
 
 ![password generator site]
+![Password Generator Site ](assets/images/Screenshot%202023-07-17%20174108.png)
+![Password Generator Site ](assets/images/Screenshot%202023-07-17%20174124.png)
+![Password Generator Site ](assets/images/Screenshot%202023-07-17%20174148.png)
+![Password Generator Site ](assets/images/Screenshot%202023-07-17%20174203.png)
+![Password Generator Site ](assets/images/Screenshot%202023-07-17%20174215.png)
+![Password Generator Site ](assets/images/Screenshot%202023-07-17%20174230.png)
+![Password Generator Site ](assets/images/Screenshot%202023-07-17%20174243.png)
+
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
