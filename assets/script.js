@@ -23,7 +23,7 @@ var generatePassword = function() {
 
   if(select < 8 || select > 128 || isNaN(select)|| null){
     alert("Please select a number between 8-128");
-    return("You failed to enter a number between 8-128 try aagain ");
+    return("You failed to enter a number between 8-128 try again ");
   }
 
 

@@ -1,6 +1,5 @@
 # password-maker
-this is a password generator
-# <Horiseon website>
+This is a password generator
 
 ## Discription
 
